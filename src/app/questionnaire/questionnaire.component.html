@@ -1,0 +1,8 @@
+<label id="questionnaire-radio-group-label">Select your age: </label>
+
+<mat-radio-group aria-label="Select an option" aria-labelledby="questionnaire-radio-group-label"
+  class="questionnaire-radio-group">
+
+  <mat-radio-button class="questionnaire-radio-button" color="primary" [value]="option"
+    *ngFor="let option of this.ageOptions" (click)="setAge(option)">{{option}}</mat-radio-button>
+</mat-radio-group>
